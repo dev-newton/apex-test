@@ -16,13 +16,11 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  const goBack: any = -1;
-
   return (
     <Routes>
       <Route
         path="/auth"
-        element={isAuth(github_data) ? <Navigate to={goBack} /> : <Auth />}
+        element={isAuth(github_data) ? <Navigate to="/app" /> : <Auth />}
       />
       <Route element={<PrivateRoute />}>
         {routes.map((route) => {
