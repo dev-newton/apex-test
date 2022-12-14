@@ -1,6 +1,6 @@
 # GitHub Explorer App
 
-Link to live preview: https://apex-github.netlify.app
+Link to live preview: https://apex-github.netlify.app/auth
 
 ##  GitHub Explorer App Description
 
