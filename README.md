@@ -30,6 +30,8 @@ Ensure you are in the root of the project and run
 yarn dev
 ```
 
+Navigate to `http://localhost:5173/auth` to view the app on localhost
+
 ### Testing
 No tests were included at this time.
 
