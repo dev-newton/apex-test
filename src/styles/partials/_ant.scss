@@ -1,0 +1,19 @@
+@use "./colors";
+
+.ant-segmented {
+  font-size: 12px !important;
+  background-color: #141517 !important;
+  color: colors.$white !important;
+  padding: 5px;
+
+  &-item {
+    &:hover {
+      color: colors.$white !important;
+    }
+  }
+
+  &-item-selected {
+    background-color: colors.$grey_600 !important;
+    color: colors.$white !important;
+  }
+}

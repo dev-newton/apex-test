@@ -1,0 +1,90 @@
+@use "src/styles/partials/colors";
+
+.card {
+  border: 1px solid colors.$grey_100;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 202px;
+  overflow: hidden;
+  z-index: 9;
+  cursor: pointer;
+
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.45;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.55;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+  }
+
+  .starsforks {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 12px;
+    gap: 16px;
+
+    .pill {
+      display: flex;
+      align-items: center;
+      border-radius: 32px;
+      border: 1px solid colors.$grey_500;
+      padding: 0 7px;
+
+      &-icon {
+        margin-right: 5px;
+        font-size: 8px;
+      }
+
+      p {
+        font-size: 9px;
+        line-height: 14px;
+        letter-spacing: 1.15px;
+      }
+    }
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    overflow: visible;
+    z-index: 99;
+    left: 50%;
+    margin-bottom: 5px;
+
+    &-top {
+      bottom: 100%;
+    }
+
+    &-bottom {
+      top: 100%;
+    }
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+}

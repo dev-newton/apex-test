@@ -1,0 +1,38 @@
+@use "src/styles/partials/colors";
+
+.box {
+  border: 1px solid colors.$grey_100;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .right-side {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.45;
+      color: colors.$white;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 9px;
+      border: 1px solid colors.$grey_100;
+      border-radius: 32px;
+      padding: 1px 7px;
+    }
+  }
+}

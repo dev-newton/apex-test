@@ -1,0 +1,60 @@
+@use "src/styles/partials/colors";
+
+.input {
+  width: 100%;
+  margin-top: calc(10px);
+  position: relative;
+
+  input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 32px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid colors.$grey_400;
+    background-color: #25262b;
+    color: colors.$grey_200;
+    border-radius: 4px;
+
+    &:focus {
+      border: 1px solid colors.$blue_100;
+    }
+
+    &::placeholder {
+      color: colors.$grey_400;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .loader {
+    width: 16px;
+    height: 16px;
+    border: 2.5px solid #718fc2;
+    border-bottom-color: #1a66dc;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    right: 12px;
+    top: 22%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
