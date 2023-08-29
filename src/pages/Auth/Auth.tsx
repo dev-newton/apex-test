@@ -12,7 +12,7 @@ const Auth = () => {
     <>
       <div className="login">
         <div className="header">
-          <h2>Please Add Github Access Token</h2>
+          <h2>Please Login with a Github Access Token</h2>
           <small>It's a simpler version of Github OAuth Setup 😉</small>
         </div>
         <div className="login-form">
