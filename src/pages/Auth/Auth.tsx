@@ -19,10 +19,7 @@ const Auth = () => {
           <form onSubmit={handleLogin}>
             <label>Github Access Token</label>
             <p>
-              You can create a token with <span>public_repo</span> permissions
-              <a href={VITE__CREATE_TOKEN_URL} target="_blank">
-                &nbsp;here
-              </a>
+              Copy and paste this token <span>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</span> in the field below to login
             </p>
             <Input
               type="password"
