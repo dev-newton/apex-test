@@ -19,7 +19,7 @@ const Auth = () => {
           <form onSubmit={handleLogin}>
             <label>Github Access Token</label>
             <p>
-              Copy and paste this token <span>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</span> in the field below to login
+              Copy and paste this token <span>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</span> in the field below to login
             </p>
             <Input
               type="password"
