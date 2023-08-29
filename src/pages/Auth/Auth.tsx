@@ -21,7 +21,7 @@ const Auth = () => {
             <p>
               You can create a token with <span>public_repo</span> permissions
               <a href={VITE__CREATE_TOKEN_URL} target="_blank">
-                &nbsp;here
+                &nbsp; here
               </a>
             </p>
             <Input
