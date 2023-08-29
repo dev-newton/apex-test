@@ -12,14 +12,17 @@ const Auth = () => {
     <>
       <div className="login">
         <div className="header">
-          <h2>Please Login with my Github Access Token</h2>
+          <h2>Please Login with a Github Access Token</h2>
           <small>It's a simpler version of Github OAuth Setup 😉</small>
         </div>
         <div className="login-form">
           <form onSubmit={handleLogin}>
             <label>Github Access Token</label>
             <p>
-              Copy and paste this token <span>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</span> in the field below to login
+              You can create a token with <span>public_repo</span> permissions
+              <a href={VITE__CREATE_TOKEN_URL} target="_blank">
+                &nbsp; here
+              </a>
             </p>
             <Input
               type="password"
